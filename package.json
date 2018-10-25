@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "gulp serve",
+    "prod": ""
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.2.1",
+    "browser-sync": "^2.26.3",
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^8.0.0",
+    "tailwindcss": "^0.6.6",
+    "tailwindcss-transforms": "^1.0.1"
+  }
+}
