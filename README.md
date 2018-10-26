@@ -3,5 +3,7 @@ These days I have been playing with [Tailwind CSS](https://tailwindcss.com/) and
 
 Icons are from [Reddit.com HTML source](https://www.reddit.com) and [Zondicons](http://www.zondicons.com/)
 
+Live preview: [https://codepen.io/vreaxe/pen/GYzQzX](https://codepen.io/vreaxe/pen/GYzQzX)
+
 
 ![Screenshot](screenshot.png)
