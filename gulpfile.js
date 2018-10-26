@@ -1,4 +1,7 @@
 var gulp        = require('gulp');
+var cleanCSS    = require('gulp-clean-css');
+var replace     = require('gulp-replace');
+var mode        = require('gulp-mode')();
 var browserSync = require('browser-sync').create();
 
 gulp.task('serve', ['css', 'html'], function() {
@@ -19,6 +22,8 @@ gulp.task('css', function () {
       tailwindcss('./tailwind.js'),
       require('autoprefixer'),
     ]))
+    .pipe(mode.production(replace('/*!', '/*')))
+    .pipe(mode.production(cleanCSS()))
     .pipe(gulp.dest('build/'));
 });
 
@@ -28,3 +33,4 @@ gulp.task('html', function () {
 });
 
 gulp.task('default', ['serve']);
+gulp.task('build', ['css', 'html'])
